@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
 :root {
   --color-primary: #2584ff;
@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 
-/* Typography */
+/* start: Typography */
 html {
   font-size: 62.5%;
 }
@@ -64,8 +64,9 @@ p {
   }
 }
 
-/* Links */
+/* end: Typography */
 
+/* start: Links */
 a {
   text-decoration: none;
 }
@@ -92,3 +93,36 @@ a {
     font-size: 1.5rem;
   }
 }
+/* end: Links */
+
+/* start: Badges */
+.badge {
+  border-radius: 20px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  background: var(--color-primary);
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+@media (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
+  }
+}
+/* end: Badges */
