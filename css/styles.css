@@ -14,6 +14,7 @@
   box-sizing: border-box;
 }
 
+/* Typography */
 html {
   font-size: 62.5%;
 }
@@ -60,5 +61,34 @@ p {
 
   h3 {
     font-size: 2.4rem;
+  }
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+.arrow-link {
+  color: var(--color-accent);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.arrow-link::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+
+.arrow-link:hover::after {
+  margin-left: 10px;
+}
+
+@media (min-width: 1024px) {
+  .arrow-link {
+    font-size: 1.5rem;
   }
 }
