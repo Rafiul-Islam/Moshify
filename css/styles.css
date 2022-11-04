@@ -365,3 +365,22 @@ a {
   }
 }
 /* end: plans */
+
+/* start: media */
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.media__image {
+  margin-top: 1rem;
+}
+
+.media__title {
+  margin-top: 0;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+/* end: media */
