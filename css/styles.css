@@ -387,9 +387,9 @@ a {
 /* end: media */
 /* start: quote */
 .quote__text {
-  font-style: italic;
-  font-size: 3rem;
   color: var(--color-body-dark);
+  font-size: 3rem;
+  font-style: italic;
 }
 
 .quote__text::before {
@@ -401,8 +401,8 @@ a {
 }
 
 .quote__author {
-  margin-bottom: 0;
   font-size: 3rem;
+  margin-bottom: 0;
 }
 
 .quote__organization {
@@ -411,8 +411,8 @@ a {
 }
 
 .quote__line {
-  position: relative;
   bottom: 10px;
+  position: relative;
 }
 
 @media (min-width: 1024px) {
