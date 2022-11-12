@@ -576,11 +576,11 @@ a {
 
 /* start:  Navigationbar*/
 .nav {
+  align-items: center;
   background: #000;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0 1rem;
 }
 
@@ -589,10 +589,10 @@ a {
 }
 
 .nav__toggler {
-  opacity: 0.5;
-  cursor: pointer;
-  transition: all 0.4s;
   border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.4s;
 }
 
 .nav__list {
@@ -601,8 +601,8 @@ a {
 }
 
 .nav__item {
-  padding: 0.5rem 2rem;
   border-bottom: 1px solid darkgray;
+  padding: 0.5rem 2rem;
 }
 
 .nav__link {
@@ -615,8 +615,8 @@ a {
 }
 
 .nav.collapsible--expanded .nav__toggler {
-  opacity: 1;
   box-shadow: 0 0 0 3px #666;
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
@@ -625,11 +625,11 @@ a {
   }
 
   .nav__list {
-    width: auto;
     display: flex;
     font-size: 1.6rem;
     max-height: 100%;
     opacity: 1;
+    width: auto;
   }
 
   .nav__item {
@@ -637,3 +637,43 @@ a {
   }
 }
 /* end:  Navigationbar*/
+
+/* start:  Blocks*/
+.block {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+}
+
+.block__header {
+  text-align: center;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.block--dark {
+  background: #000;
+  color: #7b858b;
+}
+
+.block--dark .block__heading {
+  color: #fff;
+}
+
+.block--skewed-right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+.block--skewed-left {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* end:  Blocks*/
