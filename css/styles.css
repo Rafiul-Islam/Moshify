@@ -790,3 +790,26 @@ a {
   width: 100%;
 }
 /* end:  feature*/
+
+/* start:  showcase*/
+.showcase .grid {
+  gap: 3rem;
+}
+
+.showcase__content .media__title {
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.showcase__content .media__title + p {
+  color: #7b858b;
+}
+
+.showcase__image {
+  width: 100%;
+}
+
+.showcase.block--skewed-right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+}
+/* end:  showcase*/
