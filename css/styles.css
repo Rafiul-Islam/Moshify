@@ -773,3 +773,20 @@ a {
   gap: 3rem;
 }
 /* end:  Plans*/
+
+/* start:  feature*/
+.feature {
+  align-items: center;
+  gap: 4rem 2rem;
+  margin-bottom: 12rem;
+  margin-top: 6rem;
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature__image {
+  width: 100%;
+}
+/* end:  feature*/
