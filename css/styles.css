@@ -455,7 +455,7 @@ a {
 
 @media (min-width: 1024px) {
   .quote__text {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   .quote__author {
@@ -517,6 +517,7 @@ a {
 
   .testimonial .quote {
     margin-left: 6rem;
+    align-self: center;
   }
 }
 /* end:  Testimonial*/
@@ -813,3 +814,13 @@ a {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 /* end:  showcase*/
+
+/* start:  Testimonial*/
+.testimonial-block .block__header {
+  margin-bottom: 4rem;
+}
+
+.testimonial-block .card:hover {
+  transform: none;
+}
+/* end:  Testimonial*/
