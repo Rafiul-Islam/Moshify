@@ -424,6 +424,9 @@ a {
 }
 /* end: media */
 /* start: quote */
+.quote {
+  margin: 0;
+}
 .quote__text {
   color: var(--color-body-dark);
   font-size: 3rem;
@@ -453,11 +456,10 @@ a {
   position: relative;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .quote__text {
     font-size: 2.4rem;
   }
-
   .quote__author {
     font-size: 2.4rem;
   }
@@ -466,6 +468,7 @@ a {
     font-size: 1.6rem;
   }
 }
+
 /* end: quote */
 
 /* start: grid */
