@@ -253,6 +253,18 @@ a {
   color: #fff;
 }
 
+.btn--filled {
+  background: var(--color-headings);
+  border: 2px solid transparent;
+  color: #fff;
+}
+
+.btn--filled:hover {
+  background: #fff;
+  border: 2px solid var(--color-headings);
+  color: var(--color-headings);
+}
+
 .btn--stratched {
   padding-left: 6rem;
   padding-right: 6rem;
@@ -370,6 +382,7 @@ a {
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: 1px;
+  opacity: 0.8;
 }
 
 .plan--popular .card__header {
@@ -755,8 +768,12 @@ a {
   grid-template-rows: repeat(6, 4rem);
   justify-content: center;
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 800px;
   text-align: center;
+}
+
+.block--domain__prices li:last-child {
+  display: none;
 }
 
 @media (min-width: 375px) {
@@ -784,6 +801,12 @@ a {
   }
   .block--domain .input-group .btn {
     margin-left: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .block--domain__prices li:last-child {
+    display: inline-block;
   }
 }
 
