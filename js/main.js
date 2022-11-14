@@ -1,9 +1,11 @@
-window.onload = () => {
-    const collapsible = document.querySelectorAll(".collapsible");
+AOS.init();
 
-    collapsible.forEach((item) => {
-        item.addEventListener("click", function(){
-            this.classList.toggle("collapsible--expanded");
-        })
-    })
-}
+window.onload = () => {
+  const collapsible = document.querySelectorAll(".collapsible");
+
+  collapsible.forEach((item) => {
+    item.addEventListener("click", function () {
+      this.classList.toggle("collapsible--expanded");
+    });
+  });
+};
