@@ -490,6 +490,12 @@ a {
   display: grid;
 }
 
+@media (max-width: 767.98px) {
+  .grid-reverse .grid-item:first-child {
+    order: 1;
+  }
+}
+
 @media (min-width: 768px) {
   .grid--1x2,
   .grid--1x3 {
