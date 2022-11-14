@@ -549,6 +549,8 @@ a {
 .callout {
   border-radius: 5px;
   padding: 4rem;
+  margin-bottom: -100px;
+  z-index: 2;
 }
 
 .callout--primary {
@@ -877,6 +879,12 @@ a {
 /* start:  Footer*/
 .footer {
   background: #232323;
+  padding-top: 20rem;
+  margin-top: 20rem;
+}
+
+.footer .container {
+  position: relative;
 }
 
 .footer__section {
@@ -921,7 +929,34 @@ a {
   max-width: 230px;
 }
 
+.footer .callout {
+  position: absolute;
+  width: 100%;
+  top: -600px;
+}
+
+@media (max-width: 575.98px) {
+  .footer {
+    padding-top: 40rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .footer .callout {
+    top: -420px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer .callout {
+    top: -380px;
+  }
+}
+
 @media (min-width: 992px) {
+  .footer .callout {
+    top: -320px;
+  }
   .footer .grid {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 3rem;
@@ -953,4 +988,11 @@ a {
     font-size: 1.5rem;
   }
 }
+
+@media (min-width: 1024px) {
+  .footer .callout {
+    top: -290px;
+  }
+}
+
 /* end:  Footer*/
