@@ -881,6 +881,7 @@ a {
   background: #232323;
   padding-top: 20rem;
   margin-top: 20rem;
+  padding-bottom: 0;
 }
 
 .footer .container {
@@ -964,6 +965,8 @@ a {
 
   .footer__section {
     border-bottom: 0;
+    margin-bottom: 0;
+    padding: 0;
   }
 
   .footer_heading {
